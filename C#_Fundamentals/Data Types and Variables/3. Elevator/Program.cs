@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _03._Elevator
+namespace 3._Elevator
 {
     class Program
     {
