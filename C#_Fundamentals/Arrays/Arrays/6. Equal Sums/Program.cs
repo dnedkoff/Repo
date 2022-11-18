@@ -1,4 +1,6 @@
-﻿namespace _6._Equal_Sums
+﻿using System;
+using System.Linq;
+namespace _6._Equal_Sums
 {
     internal class Program
     {
@@ -8,7 +10,6 @@
 
             int leftSum = 0;
             int rightSum = 0;
-            //int elementIndex;
             bool equalSums = false;
 
             for (int i = 0; i < inputArray.Length; i++)
@@ -37,7 +38,6 @@
                 }
                 if (leftSum == rightSum)
                 {
-                    //elementIndex= i;
                     equalSums = true;
                     Console.WriteLine(i);
                 }
