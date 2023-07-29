@@ -6,19 +6,24 @@
         {
             char start = char.Parse(Console.ReadLine());
             char end = char.Parse(Console.ReadLine());
-            PrintCharacters(start,end);
+            PrintCharacters(start, end);
         }
         static void PrintCharacters(char start, char end)
         {
-            if (start <)
+            if (start < end)
             {
-
+                for (int i = start + 1; i < end; i++)
+                {
+                    Console.Write($"{(char)i}" + " ");
+                }
             }
-            for (int i = start + 1; i < end; i++)
+            else
             {
-                Console.Write($"{(char)i}" + " ");
+                for (int i = end + 1; i < start; i++)
+                {
+                    Console.Write($"{(char)i}" + " ");
+                }
             }
-            
         }
     }
 }
